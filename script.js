@@ -7,7 +7,7 @@ let msgContainer = document.querySelector(".msg-container");
 let inputField = document.querySelector(".inputField");
 let player1 = document.getElementById("name1");
 let player2 = document.getElementById("name2");
-
+let startBtn = document.querySelector("#startGame");
 
 let turn0 = true;
 const winPattern = [
@@ -22,6 +22,10 @@ const winPattern = [
 ];
     boxes.forEach((box) => {
     box.addEventListener("click", () => {
+        if(player1.value.trim() === "" || player2.value.trim() === ""){
+            alert("Please enter Player 1 and Player 2 names first!");
+            return;
+        }
         if (turn0) {
             box.innerText = "X";
             turn0 = false;

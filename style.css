@@ -36,9 +36,16 @@ gap: 1.5vmin;
 }
 
 #reset-button{
-    padding: 1rem;
+    padding: 2rem;
     font-size: 1.25rem;
     background-color:#191913;
+    color: #fff;
+    border-radius: 1rem;
+}
+#startGame{
+     padding: 1rem;
+    font-size: 1.25rem;
+    background-color:#1b24cf;
     color: #fff;
     border-radius: 1rem;
 }
